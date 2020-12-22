@@ -1,0 +1,19 @@
+@media (max-width: 425px){
+
+    h1{
+        color: black;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #background-gradiente .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

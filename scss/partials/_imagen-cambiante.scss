@@ -1,0 +1,33 @@
+#imagen-cambiante{
+    width: 100%;
+    text-align: center;
+}
+
+.container-dos{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container-dos img{
+    margin-top: 10px;
+    height: 25rem;
+    width: 15rem;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;    // PARA QUE SE SUPERPONGAN LAS IMAGENES
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+.container-dos img.top:hover{
+    opacity: 0;
+}
+
+.linea-separador-dos{
+    border: 0.1px solid black;
+    width: 70%;
+    margin-top: 450px;
+    
+}

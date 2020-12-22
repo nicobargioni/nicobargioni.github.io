@@ -1,0 +1,223 @@
+#background-gradiente {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  height: 25rem;
+  width: 15rem;
+  border-radius: 10px;
+  background-size: cover;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.gradiente-uno {
+  background: linear-gradient(90deg, rgba(131, 58, 180, 0.3) 0%, rgba(253, 29, 29, 0.3) 50%, rgba(252, 176, 69, 0.5) 100%), url("/assets/avion.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gradiente-dos {
+  background: radial-gradient(circle, rgba(63, 94, 251, 0.3) 0%, rgba(70, 252, 232, 0.5) 83%), url("/assets/avion.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gradiente-tres {
+  background: linear-gradient(0deg, rgba(34, 193, 195, 0.3) 0%, rgba(253, 187, 45, 0.3) 100%), url("/assets/avion.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.linea-separador {
+  border: 0.1px solid black;
+  width: 70%;
+}
+
+#imagen-cambiante {
+  width: 100%;
+  text-align: center;
+}
+
+.container-dos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container-dos img {
+  margin-top: 10px;
+  height: 25rem;
+  width: 15rem;
+  border-radius: 10px;
+  background-size: cover;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container-dos img.top:hover {
+  opacity: 0;
+}
+
+.linea-separador-dos {
+  border: 0.1px solid black;
+  width: 70%;
+  margin-top: 450px;
+}
+
+#boton-hover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  padding: 16px 32px;
+  color: black;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid black;
+  border-left: 20px solid black;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid black;
+  border-right: 20px solid black;
+}
+
+a:hover {
+  background-color: black;
+  box-shadow: -12px -12px 0px black, 12px 12px 0px black;
+  color: black;
+  border: 1px solid;
+  transition: all 0.02s ease-in-out 0.1s;
+  color: white;
+}
+
+a:hover::before, a:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+.linea-separador-tres {
+  border: 0.1px solid black;
+  width: 70%;
+  margin-top: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#formulario-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formulario-placeholder h1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  text-transform: uppercase;
+  top: -20px;
+  font-size: 14px;
+  color: #d9b200d4;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.group input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 0px #ffdd4096;
+}
+
+.group input:focus {
+  outline: none;
+}
+
+.group label {
+  color: #756000b3;
+  font-size: 18px;
+  font-weight: 800;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 10px;
+  transition: 0.1s ease all;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.linea-separador-cuatro {
+  border: 0.1px solid black;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    color: black;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #background-gradiente .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.min.css.map */

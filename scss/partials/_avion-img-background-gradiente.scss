@@ -1,0 +1,54 @@
+#background-gradiente{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    height: 25rem;
+    width: 15rem;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+
+.gradiente-uno{
+    
+    background: linear-gradient(90deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.5) 100%),
+        url('/assets/avion.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gradiente-dos{
+    
+    background: radial-gradient(circle, rgba(63,94,251,0.3) 0%, rgba(70,252,232,0.5) 83%),
+        url('/assets/avion.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gradiente-tres{
+    
+    background: linear-gradient(0deg, rgba(34,193,195,0.3) 0%, rgba(253,187,45,0.3) 100%),
+        url('/assets/avion.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
